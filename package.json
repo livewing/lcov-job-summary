@@ -1,0 +1,44 @@
+{
+  "name": "lcov-job-summary",
+  "version": "1.0.0",
+  "author": "livewing.net <dev@livewing.net> (https://livewing.net/)",
+  "homepage": "https://github.com/livewing/lcov-job-summary",
+  "bugs": {
+    "url": "https://github.com/livewing/lcov-job-summary/issues"
+  },
+  "repository": "github:livewing/lcov-job-summary",
+  "keywords": [
+    "actions",
+    "coverage",
+    "lcov"
+  ],
+  "license": "MIT",
+  "main": "lib/main.js",
+  "description": "Write LCOV Report to Job summary",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rimraf lib",
+    "lint": "eslint './src/**/*.ts' && tsc --noEmit",
+    "lint:fix": "eslint './src/**/*.ts' && tsc --noEmit",
+    "package": "ncc build --source-map --license licenses.txt",
+    "prepare": "husky install",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@actions/core": "^1.9.1",
+    "lcov-parse": "^1.0.0"
+  },
+  "devDependencies": {
+    "@livewing/eslint-config": "^1.0.3",
+    "@tsconfig/strictest": "^1.0.1",
+    "@types/lcov-parse": "^1.0.0",
+    "@types/node": "^18.7.18",
+    "@vercel/ncc": "^0.34.0",
+    "better-typescript-lib": "^2.1.0",
+    "eslint": "^8.23.1",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.8.3"
+  }
+}

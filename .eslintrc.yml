@@ -1,0 +1,4 @@
+root: true
+extends: "@livewing"
+rules:
+  "@typescript-eslint/no-non-null-assertion": off

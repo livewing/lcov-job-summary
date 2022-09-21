@@ -1,0 +1,14 @@
+name: Write LCOV Report to Job Summary
+description: Write the LCOV Report to GitHub Actions Job Summary.
+author: livewing
+branding:
+  icon: check-circle
+  color: green
+inputs:
+  lcov:
+    description: The location of LCOV coverage report file.
+    default: coverage/lcov.info
+    required: true
+runs:
+  using: node16
+  main: dist/index.js
