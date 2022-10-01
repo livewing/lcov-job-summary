@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@livewing/eslint-config": "^1.0.3",
-    "@tsconfig/strictest": "^1.0.1",
+    "@tsconfig/strictest": "^1.0.2",
     "@types/lcov-parse": "^1.0.0",
     "@types/node": "^18.7.18",
     "@vercel/ncc": "^0.34.0",
