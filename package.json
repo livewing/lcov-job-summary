@@ -25,20 +25,20 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@actions/core": "^1.9.1",
+    "@actions/core": "^1.10.0",
     "lcov-parse": "^1.0.0"
   },
   "devDependencies": {
-    "@livewing/eslint-config": "^1.0.3",
-    "@tsconfig/strictest": "^1.0.1",
+    "@livewing/eslint-config": "^1.0.4",
+    "@tsconfig/strictest": "^1.0.2",
     "@types/lcov-parse": "^1.0.0",
-    "@types/node": "^18.7.18",
+    "@types/node": "^18.8.3",
     "@vercel/ncc": "^0.34.0",
     "better-typescript-lib": "^2.1.0",
-    "eslint": "^8.23.1",
+    "eslint": "^8.25.0",
     "husky": "^8.0.1",
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
-    "typescript": "^4.8.3"
+    "typescript": "^4.8.4"
   }
 }
