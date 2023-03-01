@@ -35,7 +35,7 @@
     "@types/node": "^18.11.9",
     "@vercel/ncc": "^0.34.0",
     "better-typescript-lib": "^2.1.0",
-    "eslint": "^8.27.0",
+    "eslint": "^8.35.0",
     "husky": "^8.0.2",
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
