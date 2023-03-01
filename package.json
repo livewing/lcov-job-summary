@@ -32,7 +32,7 @@
     "@livewing/eslint-config": "^1.0.6",
     "@tsconfig/strictest": "^1.0.2",
     "@types/lcov-parse": "^1.0.0",
-    "@types/node": "^18.11.9",
+    "@types/node": "^18.14.2",
     "@vercel/ncc": "^0.34.0",
     "better-typescript-lib": "^2.1.0",
     "eslint": "^8.27.0",
