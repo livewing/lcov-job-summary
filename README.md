@@ -13,14 +13,14 @@ See [action.yml](./action.yml).
 ```yml
 steps:
   - run: npm test -- --coverage
-  - uses: livewing/lcov-job-summary@v1
+  - uses: livewing/lcov-job-summary@v1.1.0
 ```
 
 ### Specify LCOV report file
 
 ```yml
 steps:
-  - uses: livewing/lcov-job-summary@v1
+  - uses: livewing/lcov-job-summary@v1.1.0
     with:
       lcov: path/to/lcov.info
 ```
