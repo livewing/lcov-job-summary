@@ -71,15 +71,19 @@ const lcovAllRow = (files) => [
     '',
     ''
 ].join('|');
-const lcovFileToRow = ({ file, branches, functions, lines }) => [
-    '',
-    `[${file}](${constants_1.blobBase}${file})`,
-    stat(branches),
-    stat(functions),
-    stat(lines),
-    uncovered(lines.details, file),
-    ''
-].join('|');
+const lcovFileToRow = ({ file, branches, functions, lines }) => {
+    const escapedFile = file.replace(/\\|`|\*|_\{|\}|<|>|\(|\)|#|\+|-|\.|!|\||~|_/g, '\\$&');
+    return [
+        '',
+        // escape markdown formatting characters
+        `[${escapedFile}](${constants_1.blobBase}${file})`,
+        stat(branches),
+        stat(functions),
+        stat(lines),
+        uncovered(lines.details, file),
+        ''
+    ].join('|');
+};
 const lcovToMarkdown = (lcov) => __awaiter(void 0, void 0, void 0, function* () {
     var _a;
     const files = (_a = (yield parseAsync(lcov))) !== null && _a !== void 0 ? _a : [];
