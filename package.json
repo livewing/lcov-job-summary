@@ -34,7 +34,7 @@
     "@types/lcov-parse": "^1.0.0",
     "@types/node": "^20.2.5",
     "@vercel/ncc": "^0.36.1",
-    "better-typescript-lib": "^2.3.1",
+    "better-typescript-lib": "^2.4.0",
     "eslint": "^8.41.0",
     "husky": "^8.0.3",
     "prettier": "^2.8.8",
